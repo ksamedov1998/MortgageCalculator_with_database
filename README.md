@@ -20,6 +20,6 @@ Default package : <br>
               &nbsp; &nbsp;   2.Ipoteka <br>
               &nbsp;  &nbsp;   3.MainClass <br>
                    <br>
-Database class contains methods for dealing with db processes <br>
+<li>Database class contains methods for dealing with db processes <br></li>
 Ipoteka (means Mortage) contains method to calc money <br>
 MainClass runs application <br>
