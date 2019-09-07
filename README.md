@@ -89,3 +89,31 @@ CREATE TABLE CUSTOMER <br>
  &nbsp;  &nbsp;  ENABLE <br>
 );</li><br>
 
+ <li>
+ CREATE TABLE MONTHLY_PAYMENT <br>
+(<br>
+ &nbsp;  &nbsp; ID NUMBER NOT NULL <br>
+&nbsp;  &nbsp;, CREDIT_ID NUMBER NOT NULL <br>
+&nbsp;  &nbsp;, PAYMENT_DATE DATE NOT NULL <br>
+&nbsp;  &nbsp;, BASE_AMOUNT NUMBER NOT NULL <br>
+&nbsp;  &nbsp;, INTEREST_AMOUNT NUMBER NOT NULL <br>
+&nbsp;  &nbsp;, TOTAL_AMOUNT NUMBER NOT NULL <br>
+&nbsp;  &nbsp;, CONSTRAINT MONTHLY_PAYMENT_PK PRIMARY KEY <br>
+  (<br>
+ &nbsp;  &nbsp;   ID <br>
+  )<br>
+&nbsp;  &nbsp;  ENABLE <br>
+);<br>
+
+ALTER TABLE MONTHLY_PAYMENT<br>
+ADD CONSTRAINT MONTHLY_PAYMENT_FK1 FOREIGN KEY<br>
+(<br>
+&nbsp;  &nbsp;  CREDIT_ID <br>
+)<br>
+REFERENCES CREDIT<br>
+(<br>
+&nbsp;  &nbsp;  ID <br>
+)<br>
+&nbsp;  &nbsp;ENABLE;<br>
+<br>
+ </li>
