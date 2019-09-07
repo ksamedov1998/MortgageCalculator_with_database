@@ -24,7 +24,8 @@ Default package : <br>
                    <br>
 <li>Database class contains methods for dealing with db processes <br></li>
 <li>Ipoteka (means Mortage) contains method to calc money <br></li>
-<li>MainClass runs application <br></li>
+<li>MainClass runs application <br></li> 
+ <br><br>
  
 SQL table : <br>
 CREATE TABLE CREDIT <br>
@@ -45,16 +46,16 @@ CREATE TABLE CREDIT <br>
   &nbsp;  &nbsp; &nbsp;  &nbsp; ENABLE <br>
  &nbsp;  &nbsp;);<br><br>
 
-ALTER TABLE CREDIT
-ADD CONSTRAINT CREDIT_FK1 FOREIGN KEY
+ALTER TABLE CREDIT <br>
+ADD CONSTRAINT CREDIT_FK1 FOREIGN KEY<br>
+(<br>
+ &nbsp;  &nbsp;  CUSTOMER_ID <br>
+)<br>
+REFERENCES CUSTOMER<br>
 (
-  CUSTOMER_ID 
+ &nbsp;  &nbsp;  ID <br>
 )
-REFERENCES CUSTOMER
-(
-  ID 
-)
-ENABLE;
+ &nbsp;  &nbsp;ENABLE;<br><br>
 
 COMMENT ON COLUMN CREDIT.CUSTOMER_ID IS 'musteri id';
 
