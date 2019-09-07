@@ -76,16 +76,16 @@ COMMENT ON COLUMN CREDIT.ACTION_DATE IS 'emeliyyat tarixi';
 </li>
 <br>
 <li>
-CREATE TABLE CUSTOMER 
-(
-  ID NUMBER NOT NULL 
-, NAME VARCHAR2(50) NOT NULL 
-, SURNAME VARCHAR2(50) NOT NULL 
-, BIRTH_DATE DATE NOT NULL 
-, CONSTRAINT CUSTOMER_PK PRIMARY KEY 
-  (
-    ID 
-  )
-  ENABLE 
-);</li>
+CREATE TABLE CUSTOMER <br>
+(<br>
+ &nbsp;  &nbsp;  ID NUMBER NOT NULL <br>
+ &nbsp;  &nbsp;, NAME VARCHAR2(50) NOT NULL <br>
+ &nbsp;  &nbsp;, SURNAME VARCHAR2(50) NOT NULL <br>
+ &nbsp;  &nbsp;, BIRTH_DATE DATE NOT NULL <br>
+ &nbsp;  &nbsp;, CONSTRAINT CUSTOMER_PK PRIMARY KEY <br>
+  (<br>
+  &nbsp;  &nbsp;   ID <br>
+  )<br>
+ &nbsp;  &nbsp;  ENABLE <br>
+);</li><br>
 
