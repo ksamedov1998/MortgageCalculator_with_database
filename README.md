@@ -28,6 +28,7 @@ Default package : <br>
  <br><br>
  
 SQL table : <br>
+<li>
 CREATE TABLE CREDIT <br>
 (<br>
   &nbsp;  &nbsp; ID NUMBER NOT NULL <br>
@@ -72,4 +73,4 @@ COMMENT ON COLUMN CREDIT.FIRST_PAYMENT_DATE IS 'ilk odenis tarixi';
 COMMENT ON COLUMN CREDIT.LAST_PAYMENT_DATE IS 'son odenis tarixi';
 
 COMMENT ON COLUMN CREDIT.ACTION_DATE IS 'emeliyyat tarixi';
-
+</li>
