@@ -1,6 +1,6 @@
 # MortgageCalculator_with_database
- <img style="display:inline;" src="https://www.oracle.com/webfolder/technetwork/tutorials/obe/db/12c/r1/odb_quickstart/images/oracle%20database.gif">
- <img  height="162px" width="207px" style="display:inline; "src="https://www.ophtek.com/wp-content/uploads/2014/08/java_tech.jpg">
+ <img src="https://www.oracle.com/webfolder/technetwork/tutorials/obe/db/12c/r1/odb_quickstart/images/oracle%20database.gif">
+ <img  height="162px" width="207px"  style="display:inline-block;" "src="https://www.ophtek.com/wp-content/uploads/2014/08/java_tech.jpg">
 Console Application takes name,surname,borndate and other personal information from user and calcs the monthly payment and total payment.
 Then it writes the data into db.<br>
 
