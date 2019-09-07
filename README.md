@@ -8,14 +8,14 @@ Driver : oracle.jdbc.driver.OracleDriver <br>
 Connection URL : jdbc:oracle:thin:@localhost <or ip>:1521/ORCL <br>
  <br>
 Exception package : 1.IllegalNameException <br>
-                  &nbsp;  2.IllegalPercentageException <br>
-                    3.IllegalSurnameException <br>
-                    4.NonAcceptableMoney <br>
-                    5.NonAcceptableYear <br>
+              &nbsp;    &nbsp;  2.IllegalPercentageException <br>
+              &nbsp;    &nbsp;  3.IllegalSurnameException <br>
+              &nbsp;    &nbsp;  4.NonAcceptableMoney <br>
+              &nbsp;    &nbsp;  5.NonAcceptableYear <br>
 objbc_driver package :ojdbc8.jar (You should add it into project library) <br>
 Default package : 1.Database <br>
-                  2.Ipoteka <br>
-                  3.MainClass <br>
+              &nbsp; &nbsp;   2.Ipoteka <br>
+             &nbsp;  &nbsp;   3.MainClass <br>
                    <br>
 Database class contains methods for dealing with db processes <br>
 Ipoteka (means Mortage) contains method to calc money <br>
