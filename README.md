@@ -8,7 +8,7 @@ Driver : oracle.jdbc.driver.OracleDriver <br>
 Connection URL : jdbc:oracle:thin:@localhost <or ip>:1521/ORCL <br>
  <br>
 Exception package : 1.IllegalNameException <br>
-                  &nbsp  2.IllegalPercentageException <br>
+                  nbsp  2.IllegalPercentageException <br>
                     3.IllegalSurnameException <br>
                     4.NonAcceptableMoney <br>
                     5.NonAcceptableYear <br>
