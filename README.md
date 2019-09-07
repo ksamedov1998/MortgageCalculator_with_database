@@ -4,7 +4,7 @@
 <div> <br>
 Console Application takes name,surname,borndate and other personal information from user and calcs the monthly payment and total payment.
 Then it writes the data into db.<br>
-
+<br>
 <strong>Database: Oracle DB <br>
 Driver : oracle.jdbc.driver.OracleDriver <br>
 Connection URL : jdbc:oracle:thin:@localhost <or ip>:1521/ORCL <br>
