@@ -25,3 +25,50 @@ Default package : <br>
 <li>Database class contains methods for dealing with db processes <br></li>
 <li>Ipoteka (means Mortage) contains method to calc money <br></li>
 <li>MainClass runs application <br></li>
+ 
+SQL table : <br>
+CREATE TABLE CREDIT <br>
+(<br>
+  &nbsp;  &nbsp; ID NUMBER NOT NULL <br>
+ &nbsp;  &nbsp; , CUSTOMER_ID NUMBER NOT NULL <br>
+ &nbsp;  &nbsp; , HOME_PRICE NUMBER NOT NULL <br>
+ &nbsp;  &nbsp; , INITIAL_PAYMENT NUMBER NOT NULL <br>
+ &nbsp;  &nbsp; , CREDIT_AMOUNT NUMBER NOT NULL <br>
+ &nbsp;  &nbsp; , INTEREST_AMOUNT NUMBER NOT NULL <br>
+ &nbsp;  &nbsp; , FIRST_PAYMENT_DATE DATE <br>
+ &nbsp;  &nbsp; , LAST_PAYMENT_DATE DATE <br>
+ &nbsp;  &nbsp; , ACTION_DATE DATE DEFAULT sysdate NOT NULL <br>
+ &nbsp;  &nbsp; , CONSTRAINT CREDIT_PK PRIMARY KEY <br>
+  (<br>
+ &nbsp;  &nbsp; &nbsp;  &nbsp;    ID <br>
+  &nbsp;  &nbsp; )<br>
+  &nbsp;  &nbsp; &nbsp;  &nbsp; ENABLE <br>
+ &nbsp;  &nbsp;);<br><br>
+
+ALTER TABLE CREDIT
+ADD CONSTRAINT CREDIT_FK1 FOREIGN KEY
+(
+  CUSTOMER_ID 
+)
+REFERENCES CUSTOMER
+(
+  ID 
+)
+ENABLE;
+
+COMMENT ON COLUMN CREDIT.CUSTOMER_ID IS 'musteri id';
+
+COMMENT ON COLUMN CREDIT.HOME_PRICE IS 'evin AZN olaraq deyeri';
+
+COMMENT ON COLUMN CREDIT.INITIAL_PAYMENT IS 'musterinin odediyi ilkin odenis meblegi';
+
+COMMENT ON COLUMN CREDIT.CREDIT_AMOUNT IS 'bankin ayirdigi kredit meblegi';
+
+COMMENT ON COLUMN CREDIT.INTEREST_AMOUNT IS 'musterinin toplam odediyi faiz meblegi';
+
+COMMENT ON COLUMN CREDIT.FIRST_PAYMENT_DATE IS 'ilk odenis tarixi';
+
+COMMENT ON COLUMN CREDIT.LAST_PAYMENT_DATE IS 'son odenis tarixi';
+
+COMMENT ON COLUMN CREDIT.ACTION_DATE IS 'emeliyyat tarixi';
+
